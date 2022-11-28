@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-1">
+            <p>
+                <button onclick="playMusic('./comoequee/comoequee.mp3')"><img width=128 height=128 src="./comoequee/comoequee.png"></button>
+                <p>Como é que é?</p>
+            </p>
+
+        </div>
+        <div class="col-1">
+            <p>
+                <button onclick="playMusic('./xim/xim.mp3')"><img width=128 height=128 src="./xim/xim.png"></button>
+            <p>Xim</p>
+            </p>
+        
+        </div>
+        <div class="col">
+        <p>
+            <button onclick="playMusic('./naosei/naosei.mp3')"><img width=128 height=128 src="./naosei/naosei.png"></button>
+        <p>Não sei</p>
+        </p>
+        
+        </div>
+        <div class="col">
+        <p>
+            <button onclick="playMusic('./galo/alimento.mp3')"><img width=128 height=128 src="./galo/galo.png"></button>
+        <p>Comprar alimento</p>
+        </p>
+        </div>
+        <div class="col">
+            <p>
+                <button onclick="playMusic('./galo/besta.mp3')"><img width=128 height=128 src="./galo/galo.png"></button>
+            <p>Largar mão de ser besta</p>
+            </p>
+        </div>
+        <div class="col">
+        <p>
+            <button onclick="playMusic('./galo/nadaaver.mp3')"><img width=128 height=128 src="./galo/galo.png"></button>
+        <p>Nada a ver irmão</p>
+        </p>
+        
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-6">
+                2 of 3 (wider)
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-5">
+                2 of 3 (wider)
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+    </div>
+   
+    
+   
+  
+   
+
+    
+   
+    
+
+    <script>
+        function playMusic(file){
+            var music = new Audio(file);
+            music.play();
+        }
+    </script>
+</body>
+</html>
